@@ -32,11 +32,11 @@
         <h2>Order Form</h2>
         <form>
             <div>            
-                Your name
+                <label for="input-name">Name</label>
                 <input type="text" name="name">
             </div>
             <div>
-                Who are we sending this to?
+                <label for="input-recipient">Who are we sending this to?</label>
                 <input type="text" name="recipient">
             </div>
             
@@ -50,10 +50,14 @@
             </div>
 
             <div>
-                When should we deliver?
-                <input type="radio" name="time" value="am">Morning</input>
-                <input type="radio" name="time" value="pm">Evening</input>
-                <input type="radio" name="time" value="any">Any time</input>
+                
+                <label for="input-time">When should we deliver?</label>
+                <label for="am">Morning</label>
+                <input type="radio" name="time" value="am"></input>
+                <label for="pm">Evening</label>
+                <input type="radio" name="time" value="pm"></input>
+                <label for="any">Any time</label>
+                <input type="radio" name="time" value="any"></input>
             </div>
 
             <div>
@@ -62,7 +66,7 @@
             </div>
 
             <div>
-                Subscribe to our newsletter
+                <label for="input-subscribe">Subscribe to our newsletter</label>
                 <input type="checkbox" name="subscribe" value="yes">Yes</input> 
             </div>
 
