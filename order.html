@@ -6,7 +6,6 @@
     </head>
     <body>
         <h1>Order a Melongram</h1>
-        
         <p>There's no better way to show a loved one you care than with a Melongram.</p>
 
         <p>Each Melongram comes with a custom message printed on high-quality cardstock
@@ -32,27 +31,41 @@
 
         <h2>Order Form</h2>
         <form>
-            <input type="text" name="name" value="Your name">
-            <input type="text" name="recipient" value="Who are we sending this to?">
-    
-            <p>Choose a melon</p>
-            <select name="melon">
-                <option value="watermelon">Watermelon</option>
-                <option value="canteloupe">Canteloupe</option>
-                <option value="honeydew">Honeydew</option>
-            </select>
+            <div>            
+                Your name
+                <input type="text" name="name">
+            </div>
+            <div>
+                Who are we sending this to?
+                <input type="text" name="recipient">
+            </div>
+            
+            <div>
+                Choose a melon
+                <select name="melon">
+                    <option value="watermelon">Watermelon</option>
+                    <option value="canteloupe">Canteloupe</option>
+                    <option value="honeydew">Honeydew</option>
+                </select>
+            </div>
 
-            <p>When should we deliver?</p>
-            <input type="radio" name="time" value="am">Morning</input>
-            <input type="radio" name="time" value="pm">Evening</input>
-            <input type="radio" name="time" value="any">Any time</input>
+            <div>
+                When should we deliver?
+                <input type="radio" name="time" value="am">Morning</input>
+                <input type="radio" name="time" value="pm">Evening</input>
+                <input type="radio" name="time" value="any">Any time</input>
+            </div>
 
-            <p>Enter your message:</p>
-            <textarea name="message"></textarea>
+            <div>
+                <p>Enter your message:</p>
+                <textarea name="message"></textarea>
+            </div>
 
-            <p>Subscribe to our newsletter</p>
-            <input type="checkbox" name="subscribe" value="yes">Yes</input> 
-            <br>
+            <div>
+                Subscribe to our newsletter
+                <input type="checkbox" name="subscribe" value="yes">Yes</input> 
+            </div>
+
             <button type="submit">Click here to submit</button>
     </form>
     </body>           
